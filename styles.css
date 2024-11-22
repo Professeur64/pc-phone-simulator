@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.60); /* تصغير المحتوى للنصف */
+  }
+  
+  /* جعل الشاشتين ثابتتين */
+.container {
+    display: flex;
+    gap: 20px;
+    position: fixed; /* الشاشتين ثابتتين */
+    top: 0; /* في منتصف الشاشة عمودياً */
+    left: 0%; /* في منتصف الشاشة أفقياً */
+    transform: translate(-19%, 0%); /* محاذاة دقيقة للمنتصف */
+  }
+  
+ /* شاشة الهاتف */
+.phone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phone-simulator {
+    width: 375px;
+    height: 667px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .phone-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* إدخال الرابط تحت الهاتف */
+  .url-input-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .url-input-container input {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .url-input-container button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .url-input-container button:hover {
+    background-color: #0056b3;
+  }
+  
+/* شاشة الحاسوب */
+.desktop-simulator {
+    width: 1920px; /* عرض الحاسوب */
+    height: 1080px; /* ارتفاع الحاسوب */
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .desktop-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform: scale(1); /* تصغير المحتوى للنصف */
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
